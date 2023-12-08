@@ -35,48 +35,48 @@ void start() {
 			continue;
 		}
 		else {
-			vector < user > v;
+			vector < database::user > v;
 			ll m = 0;
 			bool isloggedin = 0;
 			if (num == 1) {
-				if (per.Login(num, bankmasr)) {
+				if (per.Login(num, per.bankmasr)) {
 					isloggedin = true;
-					v = bankmasr;
+					v = per.bankmasr;
 					m = num;
 				}
 			}
 			else if (num == 2) {
-				if (per.Login(num, nationalbank)) {
+				if (per.Login(num, per.nationalbank)) {
 					isloggedin = true;
-					v = nationalbank;
+					v = per.nationalbank;
 					m = num;
 				}
 			}
 			else if (num == 3) {
-				if (per.Login(num, cibbank)) {
+				if (per.Login(num, per.cibbank)) {
 					isloggedin = true;
-					v = cibbank;
+					v = per.cibbank;
 					m = num;
 				}
 			}
 			else if (num == 4) {
-				if (per.Login(num, agribank)) {
+				if (per.Login(num, per.agribank)) {
 					isloggedin = true;
-					v = agribank;
+					v = per.agribank;
 					m = num;
 				}
 			}
 			else if (num == 5) {
-				if (per.Login(num, arabafricanbank)) {
+				if (per.Login(num, per.arabafricanbank)) {
 					isloggedin = true;
-					v = arabafricanbank;
+					v = per.arabafricanbank;
 					m = num;
 				}
 			}
 			else if (num == 6) {
-				if (per.Login(num, faisalbank)) {
+				if (per.Login(num, per.faisalbank)) {
 					isloggedin = true;
-					v = faisalbank;
+					v = per.faisalbank;
 					m = num;
 				}
 			}
@@ -125,32 +125,32 @@ void start() {
 						else if (num2 == 8) per.Logout();
 						else if (num2 == 9) {
 							if (num == 1) {
-								if (per.Delete_Card(num, bankmasr)) {
+								if (per.Delete_Card(num, per.bankmasr)) {
 									return;
 								}
 							}
 							if (num == 2) {
-								if (per.Delete_Card(num, nationalbank)) {
+								if (per.Delete_Card(num, per.nationalbank)) {
 									return;
 								}
 							}
 							if (num == 3) {
-								if (per.Delete_Card(num, cibbank)) {
+								if (per.Delete_Card(num, per.cibbank)) {
 									return;
 								}
 							}
 							if (num == 4) {
-								if (per.Delete_Card(num, agribank)) {
+								if (per.Delete_Card(num, per.agribank)) {
 									return;
 								}
 							}
 							if (num == 5) {
-								if (per.Delete_Card(num, arabafricanbank)) {
+								if (per.Delete_Card(num, per.arabafricanbank)) {
 									return;
 								}
 							}
 							if (num == 6) {
-								if (per.Delete_Card(num, faisalbank)) {
+								if (per.Delete_Card(num, per.faisalbank)) {
 									return;
 								}
 							}
