@@ -93,13 +93,13 @@ void database::upload_all_transfers() {
 	}
 	uploadtran.close();
 }
-void database::upload_transfer(ll num, ll fromacc, ll toacc, ll amount) {
+void database::upload(ll num, ll fromacc, ll toacc, ll amount) {
 	fstream uploadtran;
 	uploadtran.open("Transfers.txt", ios::out | ios::app);
 	uploadtran << num << endl << fromacc << endl << toacc << endl << amount << endl;
 	uploadtran.close();
 }
-void database::upload_wallet(string num, string pass, ll balance) {
+void database::upload(string num, string pass, ll balance) {
 	fstream uploadwallet;
 	uploadwallet.open("Phone.txt", ios::out | ios::app);
 	uploadwallet << num << endl << pass << endl << balance << endl;
@@ -137,14 +137,4 @@ void database::download_all_wallets() {
 		}
 	}
 	outFile.close();
-}
-bool database::num_validation(string num) {
-	for (auto it : num) {
-		if (it >= '0' && it <= '9') {
-			continue;
-		}
-		else return false;
-	}
-	if (num.size() == 11)return true;
-	return false;
 }
