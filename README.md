@@ -1,10 +1,10 @@
-### Bank Management System (BMS)
+# Bank Management System (BMS)
 
 This is a console BMS that supports different banks in egypt and have the ability to use different cards in the same system.
 
 ## Project feauters :
 
-# First chose one of these options :
+### First chose one of these options :
 - Login with Bank Masr Card.
 - Login with National Bank Of Egypt Card.
 - Login with CIB Bank Card.
@@ -15,7 +15,7 @@ This is a console BMS that supports different banks in egypt and have the abilit
 - Create A phone wallet.
 - Deposit in a phone wallet.
 - Withdraw in a phone wallet
-# If you login with a bank card then chose one of these options :
+### If you login with a bank card then chose one of these options :
 - Deposit.
 - Withdraw.
 - Balance Enquiry.
@@ -26,7 +26,7 @@ This is a console BMS that supports different banks in egypt and have the abilit
 - Logout Of My Card .
 - Delete My Card.
   
-# If you have a feedback or any suggestions tell me please.
+### If you have a feedback or any suggestions tell me please.
 
 
 
