@@ -10,8 +10,21 @@
 #define ll long long    
 using namespace std;
 class account : public database {
+protected:
+	user p;
+	transfer m;
 public:
 	account();
+	bool num_validation(string num) {
+		for (auto it : num) {
+			if (it >= '0' && it <= '9') {
+				continue;
+			}
+			else return false;
+		}
+		if (num.size() == 11)return true;
+		return false;
+	}
 	bool Login(ll, vector < user >(&));
 	void Create_Card();
 	void Deposit(ll, vector < user >(&));
