@@ -275,7 +275,7 @@ void account::Money_Transaction(ll num, vector < user >& v) {
 	ob.Toacc = accnu;
 	ob.Amount = n;
 	Tran.push_back(ob);
-	upload_transfer(ob.Banktype, ob.Fromacc, ob.Toacc, ob.Amount);
+	upload(ob.Banktype, ob.Fromacc, ob.Toacc, ob.Amount);
 	upload_users_bank(num, v);
 	cout << "Transaction has been done." << endl;
 }
@@ -329,7 +329,7 @@ void account::Create_Phone_Wallet() {
 		test.password = pass;
 		test.Balance = 0;
 		Wallets.push_back(test);
-		upload_wallet(test.number, test.password, test.Balance);
+		upload(test.number, test.password, test.Balance);
 		cout << "\nPhone wallet has been created." << endl;
 	}
 	else {
@@ -585,5 +585,4 @@ account::~account()
 {
 	cout << "\n------------------------------------------------------------------------------------------------------------------------" << endl;
 	cout << "                                                Hope you enjoyed" << endl << endl;
-	cout << "Made by Mostafa Yassin" << endl;
 }
