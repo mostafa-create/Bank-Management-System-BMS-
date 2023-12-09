@@ -19,7 +19,7 @@ This is a console BMS that supports different banks in egypt and have the abilit
 - Deposit.
 - Withdraw.
 - Balance Enquiry.
-- Send Money To Another Account.
+- Money Transaction.
 - Modify The Account.
 - Show Transfers To Me.
 - Show Transfers from Me.
